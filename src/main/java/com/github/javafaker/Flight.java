@@ -54,4 +54,21 @@ public class Flight {
 
         return result;
     }
+
+    public static String getAirlineName() {
+        String[] airlineNames = new String[]{"Fly Service", "Global Alliance", "EngineeringSpace", "Jet Team",
+                "Ironclad Air", "Assured Atmosphere", "Arrive Safe", "Premiere Protection", "Sky Shop",
+                "Air Innovations", "Capable Craft", "Hightail Demo", "Shift Airways", "Space Safe", "Jet World",
+                "Luxury Spot", "Exotic Airline", "Global Traveler", "Airway Moment", "Smart Wing", "Volts aerospace",
+                "Tourism Help", "Aero Force One", "Safe Escape", "Nonstop Trip", "Homeland Innovations",
+                "Economy Speed", "Front Desk", "Tactical Takeoff", "Forge aerodynamics", "Spark Airways"};
+
+        int min = 0;
+        int max = airlineNames.length;
+
+        int index = (int)(Math.random() * (max - min));
+        String str = airlineNames[index];
+
+        return str;
+    }
 }
