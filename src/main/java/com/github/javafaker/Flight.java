@@ -10,7 +10,7 @@ public class Flight {
         this.faker = faker;
     }
 
-    public static int getDigits() {
+    public int getDigits() {
         int min = 1;
         int max = 9999;
 
@@ -19,7 +19,7 @@ public class Flight {
         return digits;
     }
 
-    public static String getLetters(int iterations) {
+    public String getLetters(int iterations) {
         String letters = "";
         char first = 'A';
         char last = 'Z';
@@ -33,7 +33,7 @@ public class Flight {
         return letters;
     }
 
-    public static String getIataFlight() {
+    public String getIataFlight() {
         String result = "";
         int iterations = 2;
 
@@ -44,7 +44,7 @@ public class Flight {
         return result;
     }
 
-    public static String getIcaoFlight() {
+    public String getIcaoFlight() {
         String result = "";
         int iterations = 3;
 
@@ -55,13 +55,13 @@ public class Flight {
         return result;
     }
 
-    public static String getAirlineName() {
-        String[] airlineNames = new String[]{"Fly Service", "Global Alliance", "EngineeringSpace", "Jet Team",
+    public String getAirlineName() {
+        String[] airlineNames = new String[]{"Fly Service", "Global Alliance", "Engineering Space", "Jet Team",
                 "Ironclad Air", "Assured Atmosphere", "Arrive Safe", "Premiere Protection", "Sky Shop",
                 "Air Innovations", "Capable Craft", "Hightail Demo", "Shift Airways", "Space Safe", "Jet World",
-                "Luxury Spot", "Exotic Airline", "Global Traveler", "Airway Moment", "Smart Wing", "Volts aerospace",
-                "Tourism Help", "Aero Force One", "Safe Escape", "Nonstop Trip", "Homeland Innovations",
-                "Economy Speed", "Front Desk", "Tactical Takeoff", "Forge aerodynamics", "Spark Airways"};
+                "Luxury Spot", "Exotic Airline", "Global Traveler", "Airway Moment", "Smart Wing", "Volts Aerospace",
+                "Tourism Help", "Aero One", "Safe Escape", "Nonstop Trip", "Homeland Innovations",
+                "Economy Speed", "Front Desk", "Tactical Takeoff", "Forge Aerodynamics", "Spark Airways"};
 
         int min = 0;
         int max = airlineNames.length;
