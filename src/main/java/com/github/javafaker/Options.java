@@ -52,4 +52,13 @@ public class Options {
     public <E> E nextElement(List<E> list) {
         return list.get(faker.random().nextInt(list.size()));
     }
+
+    /**
+     * Returns a random null value.
+     *
+     * @param object The object being passed in.
+     * @param <E>    The type of the object.
+     * @return A randomly selected element from null and the original object.
+     */
+    public <E> E nextNull(E object) { return faker.options().option(null, object); }
 }
