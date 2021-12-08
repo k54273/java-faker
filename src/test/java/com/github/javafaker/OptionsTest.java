@@ -50,6 +50,7 @@ public class OptionsTest extends AbstractFakerTest {
         }
     }
 
+
     @Test
     public void testNextListElement() {
         List<Integer> list = Arrays.asList(1, 2, 3, 5, 8, 13, 21);

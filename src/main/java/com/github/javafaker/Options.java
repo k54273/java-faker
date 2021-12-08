@@ -31,6 +31,7 @@ public class Options {
         return enumConstants[faker.random().nextInt(enumConstants.length)];
     }
 
+
     /**
      * Returns a random element from an array.
      *
