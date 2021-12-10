@@ -18,8 +18,8 @@ public class Flight {
      * @return randomly generated digit
      */
     public int getDigits() {
-        int min = 1;
-        int max = 9999;
+        final int min = 1;
+        final int max = 9999;
 
         return (int)(Math.random() * (max - min + 1));
     }
@@ -49,7 +49,7 @@ public class Flight {
      */
     public String getIataFlight() {
         String result;
-        int iterations = 2;
+        final int iterations = 2;
 
         int digits = getDigits();
         String letters = getLetters(iterations);
@@ -64,7 +64,7 @@ public class Flight {
      */
     public String getIcaoFlight() {
         String result;
-        int iterations = 3;
+        final int iterations = 3;
 
         int digits = getDigits();
         String letters = getLetters(iterations);
